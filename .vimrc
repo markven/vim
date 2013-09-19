@@ -13,7 +13,7 @@ set bg=dark             "顯示不同的底色色調
 syntax on               "進行語法檢驗，顏色顯示。
 
 set nocompatible " VIM 不使用和 VI 相容的模式
-" set ai           " 自動縮排
+set ai           " 自動縮排
 set shiftwidth=2 " 設定縮排寬度 = 4 
 set tabstop=4    " tab 的字元數
 set softtabstop=4
@@ -31,5 +31,7 @@ set history=100  " 保留 100 個使用過的指令
 set cursorline   " 顯示目前的游標位置
  
 nnoremap <silent> <F5> :NERDTree<CR>   " 顯示檔案數的快捷
+nnoremap <silent> <F3> :wq<CR>   " 快速儲存並離開
+nnoremap <silent> <F4> :w<CR>   " 快速儲存
 call pathogen#infect()  " 抹組安裝套件的啓動
 set mouse=nv "設定滑鼠只能在 Visual, Normal mode時有作用
