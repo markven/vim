@@ -13,7 +13,7 @@ set bg=dark             "顯示不同的底色色調
 syntax on               "進行語法檢驗，顏色顯示。
 
 set nocompatible " VIM 不使用和 VI 相容的模式
-" set ai           " 自動縮排
+set ai           " 自動縮排
 set shiftwidth=2 " 設定縮排寬度 = 4 
 set tabstop=4    " tab 的字元數
 set softtabstop=4
@@ -30,6 +30,7 @@ set confirm      " 操作過程有衝突時，以明確的文字來詢問
 set history=100  " 保留 100 個使用過的指令
 set cursorline   " 顯示目前的游標位置
  
+<<<<<<< HEAD
 nnoremap <silent> <F5> :NERDTree<CR>   " 顯示檔案數快捷mark
 " 開啟模組管理工具 pathogen
 execute pathogen#infect()  
@@ -38,3 +39,9 @@ set mouse=a "設定滑鼠只能在 Visual, Normal mode時有作用
 "模組設定
 
 let g:Powerline_symbols = 'fancy'
+
+
+
+
+
+
