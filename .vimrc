@@ -30,6 +30,11 @@ set confirm      " 操作過程有衝突時，以明確的文字來詢問
 set history=100  " 保留 100 個使用過的指令
 set cursorline   " 顯示目前的游標位置
  
-nnoremap <silent> <F5> :NERDTree<CR>   " 顯示檔案數的快捷
-call pathogen#infect()  " 抹組安裝套件的啓動
-set mouse=nv "設定滑鼠只能在 Visual, Normal mode時有作用
+nnoremap <silent> <F5> :NERDTree<CR>   " 顯示檔案數快捷mark
+" 開啟模組管理工具 pathogen
+execute pathogen#infect()  
+set mouse=a "設定滑鼠只能在 Visual, Normal mode時有作用
+
+"模組設定
+
+let g:Powerline_symbols = 'fancy'
